@@ -1,0 +1,17 @@
+.center {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 15%;
+    height: 15%;
+    margin:0 auto;
+    display:block;
+}
+
+.profile-description {
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+}
