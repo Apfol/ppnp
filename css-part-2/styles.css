@@ -2,22 +2,22 @@ body {
     background: linear-gradient(241deg, #19e6b1, #5fe619);
     background-size: 400% 400%;
     font-family: 'Roboto';
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    -webkit-animation: BackgroundAnimation 30s ease infinite;
+    -moz-animation: BackgroundAnimation 30s ease infinite;
+    animation: BackgroundAnimation 30s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes BackgroundAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes BackgroundAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes AnimationName {
+@keyframes BackgroundAnimation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
