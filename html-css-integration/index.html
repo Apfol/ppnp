@@ -13,14 +13,22 @@
 <body>
     <h1 id="title">Basic Calculator</h1>
     <div class="form">
-        <form>
+        <form class="needs-validation" novalidate>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Primer valor</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo 1">
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo 1"
+                    required>
+                <div class="invalid-feedback">
+                    Digita un número entero
+                </div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Segundo valor</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo 13">
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ejemplo 13"
+                    required>
+                <div class="invalid-feedback">
+                    Digita un número entero
+                </div>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="sum"
