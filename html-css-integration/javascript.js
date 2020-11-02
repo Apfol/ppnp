@@ -6,13 +6,40 @@
         // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function (form) {
             form.addEventListener('submit', function (event) {
+                event.preventDefault();
                 if (form.checkValidity() === false) {
-                    event.preventDefault();
                     event.stopPropagation();
+                } else {
+                    doOperation();
                 }
                 form.classList.add('was-validated');
             }, false);
         });
-        console.log(validation);
+        function doOperation() {
+            var operation = $("input:checked").val();
+            console.log(operation);
+            var firstValue = parseInt($("#firstValue").val());
+            var secondValue = parseInt($("#secondValue").val());
+            switch (operation) {
+                case "sum":
+                    var result = firstValue + secondValue;
+                    alert("El resultado es: " + result);
+                    break;
+                case "difference":
+                    var result = firstValue - secondValue;
+                    alert("El resultado es: " + result);
+                    break;
+                case "multiply":
+                    var result = firstValue * secondValue;
+                    alert("El resultado es: " + result);
+                    break;
+                case "divide":
+                    var result = firstValue / secondValue;
+                    alert("El resultado es: " + result);
+                    break;
+                default:
+                // code block
+            }
+        }
     }, false);
 })();
