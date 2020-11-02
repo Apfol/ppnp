@@ -17,7 +17,6 @@
         });
         function doOperation() {
             var operation = $("input:checked").val();
-            console.log(operation);
             var firstValue = parseInt($("#firstValue").val());
             var secondValue = parseInt($("#secondValue").val());
             switch (operation) {
